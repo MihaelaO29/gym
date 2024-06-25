@@ -1,27 +1,38 @@
 import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import About from './components/about/about';
-import Benefits from './components/benefits/benefits';
-import Bmi from './components/bmi/bmi';
+import News from './components/news/news';
+import Trainers from './components/trainers/trainers';
 import Classes from './components/classes/classes';
-import Footer from './components/footer/footer';
 import Home from './components/home/home';
-import Pricing from './components/pricing/pricing';
+import Contact from './components/contact/contact';
 import Schedules from './components/schedules/schedules';
+import workout1 from './images/workout1.jpg';
+
 
 
 function App() {
   return (
-    <div className='App'>
-      <Home/>
-      <About/>
-      <Benefits/>
-      <Bmi/>
-      <Classes/>
-      <Pricing/>
-      <Schedules/>
-      <Pricing/>
-      <Footer/> 
-    </div>
+
+<Router>
+<div className='App'
+  style={{
+    backgroundImage: `url(${workout1})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+  }}>
+  <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="/about" element={<About />} />
+    <Route path="/trainers" element={<Trainers/>} />
+    <Route path="/classes" element={<Classes/>} />
+    <Route path="/schedules" element={<Schedules/>} />
+    <Route path="/news" element={<News/>} />
+    <Route path="/contact" element={<Contact/>} />
+  </Routes>
+</div>
+
+</Router>
   );
 }
 
