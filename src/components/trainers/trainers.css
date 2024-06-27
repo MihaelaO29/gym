@@ -1,0 +1,118 @@
+.trainers_section {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(11, 10, 10, 0.571);
+}
+
+.trainers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+
+.trainers_title {
+    font-weight: 700;
+    color: #fff;
+    font-size: 70px;
+}
+
+.trainers_content {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    margin: 150px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.all_trainers {
+    height: 490px;
+    width: 100%;
+    background: rgb(69, 69, 69);
+    background: radial-gradient(circle, rgba(69, 69, 69, 0.9893207282913166) 23%, rgba(0, 0, 0, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.trainer {
+    height: 490px;
+    transition: transform 0.5s ease;
+}
+
+.trainer:hover {
+    transform: translateX(-40px);
+}
+
+.trainers_content_heading {
+    padding-bottom: 60px;
+    font-size: 34px;
+    font-weight: 800;
+    color: red;
+}
+
+.trainer_wrapper {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+.trainer_name {
+    height: 50px;
+    width: 250px;
+    position: absolute;
+    bottom: 30%;
+    color: #fff;
+    width: 100px;
+    text-align: center;
+    font-weight: 800;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    right: 20%;
+    display: flex;
+    align-items: center;
+    text-shadow: 1px 1px 2px black;
+}
+
+.trainer_wrapper:hover .trainer_name {
+    opacity: 1;
+}
+
+.gym_details {
+    height: 400px;
+    background-color: #f6f4f1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 100px 200px 100px;
+    border-radius: 50px;
+}
+
+.gym_details_benefits {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    justify-content: space-between;
+}
+
+.details_wrapper {
+    width: 300px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+
+}
+
+.gym_details_heading {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.gym_details_text {
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #646464;
+}
