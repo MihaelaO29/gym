@@ -1,7 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import About from './components/about/about';
-import News from './components/news/news';
 import Trainers from './components/trainers/trainers';
 import Classes from './components/classes/classes';
 import Home from './components/home/home';
@@ -27,7 +26,6 @@ function App() {
     <Route path="/trainers" element={<Trainers/>} />
     <Route path="/classes" element={<Classes/>} />
     <Route path="/schedules" element={<Schedules/>} />
-    <Route path="/news" element={<News/>} />
     <Route path="/contact" element={<Contact/>} />
   </Routes>
 </div>

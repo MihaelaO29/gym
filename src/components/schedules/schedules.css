@@ -1,0 +1,137 @@
+.schedules_section {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(11, 10, 10, 0.571);
+}
+
+.schedules {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+
+.schedules_title {
+    font-weight: 700;
+    color: #fff;
+    font-size: 70px;
+}
+
+.schedules_content {
+    margin-top: 50px;
+}
+
+.table_component {
+    overflow: auto;
+    margin: 100px 100px;
+}
+
+.table_component table {
+    border: 1px solid #dededf;
+    height: 100%;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: center;
+}
+
+.table_component caption {
+    caption-side: top;
+    text-align: center;
+}
+
+.table_component th {
+    height: 75px;
+    border: 1px solid #0142a2;
+    background-color: #0142a2;
+    color: #000000;
+    padding: 5px;
+    color: white;
+}
+
+.table_component td {
+    height: 75px;
+    border: 1px solid #dededf;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 5px;
+}
+
+.pricing_plan_details {
+    margin: 200px 0;
+    background-color: rgb(247 247 247);
+}
+
+.pricing_plan_list {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(247 247 247);
+    margin: 50px 0;
+}
+
+.pricing_plan {
+    width: 350px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+}
+
+.plan_type {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.plan_price {
+    font-size: 50px;
+    font-weight: 600;
+    color: #e1193e;
+}
+
+.plan_benefit {
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: gray;
+}
+
+.plan_button {
+    height: 55px;
+    width: 55%;
+    background-color: #e1193e;
+    border: 0;
+    color: white;
+    font-style: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.plan_button:hover {
+    background-color: #0142a2;
+}
+
+.pricing_heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.pricing_subheading {
+    font-size: 34px;
+    font-weight: 800;
+}
+
+.pricing_heading_text {
+    font-size: 13px;
+    display: block;
+    margin-bottom: 5px;
+    color: #e1193e;
+    font-weight: 700;
+}
