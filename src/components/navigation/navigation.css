@@ -51,7 +51,7 @@
 
 
 .media_icon:hover{
-    background-color:white;
+    background-color:#0142a2;
     cursor: pointer;
 }
 
@@ -71,17 +71,16 @@
 .menu_link {
     text-decoration: none;
     color: white;
+    cursor: pointer;
+  text-decoration: none;
   }
 
-.menu_link:hover{
+.clicked{
     color:#e1193e;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.menu_link_btn:hover{
-    color:black;
-    cursor: pointer;
-} 
 
 .menu_link_btn{
     height: 100%;

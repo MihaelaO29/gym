@@ -1,12 +1,13 @@
 import './navigation.css';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import logo from '../../images/logo.png';
 import twitter from '../../images/twitter.png';
 import facebook from '../../images/facebook.png';
 import instagram from '../../images/instagram.png';
 
-
 function Navigation() {
+  const location = useLocation();
+
   return (
     <div>
       <div className='home_social_media'>
@@ -20,12 +21,42 @@ function Navigation() {
       <div className='nav'>
         <img className='logo' src={logo} alt='logo' />
         <div className='menu'>
-          <Link className='menu_link' to='/'>HOME</Link>
-          <Link className='menu_link' to='/about'>ABOUT</Link>
-          <Link className='menu_link' to='/trainers'>TRAINERS</Link>
-          <Link className='menu_link' to='/classes'>CLASSES</Link>
-          <Link className='menu_link' to='/schedules'>SCHEDULES</Link>
-          <Link className='menu_link' to='/contact'>CONTACT</Link>
+          <Link
+            className={`menu_link ${location?.pathname === '/' ? 'clicked' : ''}`}
+            to='/'
+          >
+            HOME
+          </Link>
+          <Link
+            className={`menu_link ${location?.pathname === '/about' ? 'clicked' : ''}`}
+            to='/about'
+          >
+            ABOUT
+          </Link>
+          <Link
+            className={`menu_link ${location?.pathname === '/trainers' ? 'clicked' : ''}`}
+            to='/trainers'
+          >
+            TRAINERS
+          </Link>
+          <Link
+            className={`menu_link ${location?.pathname === '/classes' ? 'clicked' : ''}`}
+            to='/classes'
+          >
+            CLASSES
+          </Link>
+          <Link
+            className={`menu_link ${location?.pathname === '/schedules' ? 'clicked' : ''}`}
+            to='/schedules'
+          >
+            SCHEDULES
+          </Link>
+          <Link
+            className={`menu_link ${location?.pathname === '/contact' ? 'clicked' : ''}`}
+            to='/contact'
+          >
+            CONTACT
+          </Link>
           <div className='menu_link_btn'>BECOME A MEMBER</div>
         </div>
       </div>

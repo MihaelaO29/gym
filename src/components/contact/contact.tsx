@@ -3,7 +3,13 @@ import Navigation from '../navigation/navigation';
 import './contact.css';
 
 function Contact() {
+const handleClick=(e:any) => {
+  e?.preventDefault();
+};
+
   return (
+
+  
     <div className='contact_section'>
       <Navigation />
 
@@ -51,7 +57,7 @@ function Contact() {
             <div>
               <textarea className='form_contact_text' placeholder='Create a message here' name='text' required></textarea>
             </div>
-            <button className='contact_btn'>SEND MESSAGE</button>
+            <button onClick={handleClick} className='contact_btn'>SEND MESSAGE</button>
           </form>
         </div>
       </div>
