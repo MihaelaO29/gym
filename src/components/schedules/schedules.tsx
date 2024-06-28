@@ -105,7 +105,7 @@ function Schedules() {
 
             <div className='pricing_plan'>
               <div className='plan_type'>BEGINNER PLAN</div>
-              <div className='plan_price'>$ 49</div>
+              <div className='plan_price'>$ 60</div>
               <div className='plan_benefit'>Personal Trainer</div>
               <div className='plan_benefit'>Convienient Time</div>
               <div className='plan_benefit'>Special Class</div>
@@ -116,7 +116,7 @@ function Schedules() {
 
             <div className='pricing_plan'>
               <div className='plan_type'>PREMIUM PLAN</div>
-              <div className='plan_price'>$ 49</div>
+              <div className='plan_price'>$ 70</div>
               <div className='plan_benefit'>Personal Trainer</div>
               <div className='plan_benefit'>Convienient Time</div>
               <div className='plan_benefit'>Special Class</div>
@@ -127,7 +127,7 @@ function Schedules() {
 
             <div className='pricing_plan'>
               <div className='plan_type'>ULTIMATE PLAN</div>
-              <div className='plan_price'>$ 49</div>
+              <div className='plan_price'>$ 99</div>
               <div className='plan_benefit'>Personal Trainer</div>
               <div className='plan_benefit'>Convienient Time</div>
               <div className='plan_benefit'>Special Class</div>
